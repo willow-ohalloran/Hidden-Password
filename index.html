@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rating</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+<body>
+<div class="rating-box">
+    <header>Rate your experience</header>
+    <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/acb1d2ae69.js" crossorigin="anonymous"></script>
+<script>
+const stars = document.querySelectorAll(".stars i");
+
+
+stars.forEach((star, index1) => {
+  star.addEventListener("click", () => {
+        
+
+       stars.forEach((star, index2) => {
+    
+        index1 >= index2 ? star.classList.add("active") : star.classList.remove("active")
+       })
+    });
+});
+
+
+
+</script>
+</body>
+</html>
